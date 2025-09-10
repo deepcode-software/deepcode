@@ -8,97 +8,89 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Python-inspired dark theme colors */
-    --background: 213 20% 8%;
-    --foreground: 47 100% 88%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-    --card: 213 25% 12%;
-    --card-foreground: 47 100% 88%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 213 25% 12%;
-    --popover-foreground: 47 100% 88%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-    /* Python Blue as primary */
-    --primary: 210 54% 32%;
-    --primary-foreground: 47 100% 88%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 213 18% 16%;
-    --secondary-foreground: 47 100% 88%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 213 18% 16%;
-    --muted-foreground: 213 10% 60%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Python Yellow as accent */
-    --accent: 47 100% 62%;
-    --accent-foreground: 213 20% 8%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 47 100% 88%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 213 15% 22%;
-    --input: 213 18% 16%;
-    --ring: 47 100% 62%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    /* Python-themed gradients */
-    --gradient-python: linear-gradient(135deg, hsl(210 54% 32%), hsl(47 100% 62%));
-    --gradient-code: linear-gradient(135deg, hsl(213 25% 12%), hsl(213 18% 16%));
-    --gradient-hero: linear-gradient(135deg, hsl(213 20% 8%), hsl(213 25% 12%));
+    --sidebar-background: 0 0% 98%;
 
-    /* Shadows with Python colors */
-    --shadow-python: 0 10px 30px -10px hsl(210 54% 32% / 0.3);
-    --shadow-glow: 0 0 40px hsl(47 100% 62% / 0.2);
+    --sidebar-foreground: 240 5.3% 26.1%;
 
-    /* Sidebar colors for docs */
-    --sidebar-background: 213 25% 10%;
-    --sidebar-foreground: 47 100% 88%;
-    --sidebar-primary: 210 54% 32%;
-    --sidebar-primary-foreground: 47 100% 88%;
-    --sidebar-accent: 213 18% 16%;
-    --sidebar-accent-foreground: 47 100% 88%;
-    --sidebar-border: 213 15% 22%;
-    --sidebar-ring: 47 100% 62%;
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    /* Same colors for consistent dark theme */
-    --background: 213 20% 8%;
-    --foreground: 47 100% 88%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 213 25% 12%;
-    --card-foreground: 47 100% 88%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 213 25% 12%;
-    --popover-foreground: 47 100% 88%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 210 54% 32%;
-    --primary-foreground: 47 100% 88%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 213 18% 16%;
-    --secondary-foreground: 47 100% 88%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 213 18% 16%;
-    --muted-foreground: 213 10% 60%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 47 100% 62%;
-    --accent-foreground: 213 20% 8%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 47 100% 88%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 213 15% 22%;
-    --input: 213 18% 16%;
-    --ring: 47 100% 62%;
-
-    --sidebar-background: 213 25% 10%;
-    --sidebar-foreground: 47 100% 88%;
-    --sidebar-primary: 210 54% 32%;
-    --sidebar-primary-foreground: 47 100% 88%;
-    --sidebar-accent: 213 18% 16%;
-    --sidebar-accent-foreground: 47 100% 88%;
-    --sidebar-border: 213 15% 22%;
-    --sidebar-ring: 47 100% 62%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -109,36 +101,5 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-  }
-
-  /* Custom utilities for Python documentation */
-  .gradient-python {
-    background: var(--gradient-python);
-  }
-
-  .gradient-code {
-    background: var(--gradient-code);
-  }
-
-  .gradient-hero {
-    background: var(--gradient-hero);
-  }
-
-  .shadow-python {
-    box-shadow: var(--shadow-python);
-  }
-
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
-  }
-
-  /* Code highlighting */
-  .code-block {
-    @apply bg-muted border border-border rounded-lg p-4 font-mono text-sm;
-  }
-
-  /* Smooth scrolling for navigation */
-  html {
-    scroll-behavior: smooth;
   }
 }
