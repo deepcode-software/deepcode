@@ -66,27 +66,27 @@ export const DocumentationPage = () => {
             <article className="flex-1 min-w-0 px-4 sm:px-6 lg:px-8 py-8">
                 {/* Breadcrumb */}
                 <div className="mb-8">
-                    <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
-                        <a href="/" className="hover:text-primary-600 dark:hover:text-primary-400">
+                    <div className="inline-flex items-center gap-2 text-sm px-4 py-2 glass-3 rounded-2xl border border-white/30 dark:border-white/20">
+                        <a href="/" className="hover:text-primary-600 dark:hover:text-primary-400 transition-colors font-medium">
                             Home
                         </a>
-                        <span>/</span>
-                        <span className="capitalize">{course}</span>
-                        <span>/</span>
-                        <span className="text-gray-900 dark:text-white font-medium">
+                        <span className="text-gray-400">/</span>
+                        <span className="capitalize text-gray-600 dark:text-gray-400">{course}</span>
+                        <span className="text-gray-400">/</span>
+                        <span className="text-gray-900 dark:text-white font-bold">
                             {lessonData.title}
                         </span>
                     </div>
                 </div>
 
                 {/* Title & Meta */}
-                <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                <div className="mb-10">
+                    <h1 className="text-4xl sm:text-5xl font-black gradient-text mb-6 leading-tight">
                         {lessonData.title}
                     </h1>
-                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                        <div className="flex items-center gap-1">
-                            <Clock className="w-4 h-4" />
+                    <div className="flex items-center gap-4">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 neural-card rounded-2xl text-sm font-medium text-gray-700 dark:text-gray-300 shadow-neural">
+                            <Clock className="w-4 h-4 animate-pulse-glow" />
                             <span>{readingTime} min read</span>
                         </div>
                     </div>
@@ -94,7 +94,9 @@ export const DocumentationPage = () => {
 
                 {/* Content */}
                 <div className="max-w-3xl">
-                    <MarkdownRenderer content={content} />
+                    <div className="prose prose-lg dark:prose-invert max-w-none">
+                        <MarkdownRenderer content={content} />
+                    </div>
                 </div>
             </article>
 
